@@ -23,15 +23,12 @@ void add(int num1,int den1, int num2, int den2, int *num3, int *den3)
         *den3=(*den3)/i;
       }
     }
-  if(*num3==*den3){
-    *num3=1;
-    *den3=1;
-  }
+  if(*num3==*den3)
+      *num3=*den3=1;
 }
 void output(int num1, int den1, int num2, int den2, int num3, int den3)
 {
   printf("%d/%d + %d/%d = %d/%d\n",num1,den1,num2,den2,num3,den3);
-  
 }
 int main()
 {
