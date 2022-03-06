@@ -33,13 +33,13 @@ int count_words1(char *string)
 }
 void output(char *string, int no_words)
 {
-  printf("The number of words in %s is %d\n",string,no_words);
+  printf("The number of words in %s is %d\n",string,no_words+1);
 }
 int main()
 {
   char string[50];
   input_string(string);
-  int words=count_words1(string);
+  int words=count_words(string);
   output(string,words);
   return 0;
 }
