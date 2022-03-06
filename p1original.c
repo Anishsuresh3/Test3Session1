@@ -27,7 +27,6 @@ void add(int num1,int den1, int num2, int den2, int *num3, int *den3)
     }
   if(*num3==*den3)
       *num3=*den3=1;
-  
 }
 void output(int num1, int den1, int num2, int den2, int num3, int den3)
 {
