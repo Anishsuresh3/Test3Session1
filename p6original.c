@@ -17,7 +17,7 @@ int count_words(char *string)
       if(string[i]==' ' && string[i+1]!=' ' && string[i+1]!='\0')
          c++;
     }
-  return c;
+  return c+1;
 }
 int count_words1(char *string)
 {
@@ -33,7 +33,7 @@ int count_words1(char *string)
 }
 void output(char *string, int no_words)
 {
-  printf("The number of words in %s is %d\n",string,no_words+1);
+  printf("The number of words in %s is %d\n",string,no_words);
 }
 int main()
 {
